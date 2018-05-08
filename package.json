@@ -21,6 +21,7 @@
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
     "compare-versions": "^3.1.0",
-    "r2": "^2.0.1"
+    "r2": "^2.0.1",
+    "engine": "git+https://github.com/ShaofeiZi/engine.git"
   }
 }

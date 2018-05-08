@@ -9,9 +9,8 @@ const { version: nowVersion } = require('../package');
 
 module.exports = async ( ) => {
     try {
-        // const { version } = JSON.parse( await r2( '' ).text );
-const version = '3.2.1'
-        // if ( compareVersion( version, nowVersion ) > 0 ) {
+        const { version } = JSON.parse( await r2( 'https://github.com/ShaofeiZi/FLY-CLI/blob/master/package.json' ).text );
+        if ( compareVersion( version, nowVersion ) > 0 ) {
             console.log(
                 boxen(
                     chalk.yellow( `请升级FLY-CLI ${ nowVersion } → ${ chalk.bold.yellow.underline( version ) }\n运行 ${ chalk.bold.green( 'npm i -g fly-cli' ) } 来升级` ),
@@ -22,7 +21,7 @@ const version = '3.2.1'
                     }
                 )
             )
-        // }
+        }
     } catch ( e ) {
         console.error( '[CHECK UPDATE ERROR]', e );
     }
