@@ -1,0 +1,26 @@
+{
+  "name": "fly-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaofeiZi/FLY-CLI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShaofeiZi/FLY-CLI/issues"
+  },
+  "homepage": "https://github.com/ShaofeiZi/FLY-CLI#readme",
+  "dependencies": {
+    "boxen": "^1.3.0",
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "compare-versions": "^3.1.0",
+    "r2": "^2.0.1"
+  }
+}
